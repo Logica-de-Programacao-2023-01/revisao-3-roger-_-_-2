@@ -4,6 +4,10 @@ package q2
 //
 //Se não houver um prefixo comum, retorne uma string vazia "".
 
+import (
+	"strings"
+)
+
 func LongestCommonPrefix(strs []string) string {
 	if len(strs) == 0 {
 		return ""
