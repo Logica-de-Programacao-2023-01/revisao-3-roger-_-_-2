@@ -4,6 +4,14 @@ package q3
 //
 //A cada vez, você pode subir 1 ou 2 degraus. De quantas maneiras distintas você pode subir até o topo?
 
+func fatorial(n int) (resultado int) {
+	if n > 0 {
+		resultado = n * fatorial(n-1)
+		return resultado
+	}
+	return 1
+}
+
 func ClimbStairs(n int) int {
 	pos := 0
 	menos := 1
